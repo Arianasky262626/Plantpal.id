@@ -1,0 +1,59 @@
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("./fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("./fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("./fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("./fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("./fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.faboost {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.checkbox,
+.radio {
+  display: inline-block;
+  margin-bottom: 15px; }
+  .checkbox:hover,
+  .radio:hover {
+    cursor: pointer; }
+  .checkbox .faboost,
+  .radio .faboost {
+    width: 1em; }
+
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none; }
+  .checkbox input[type="checkbox"] + i:before,
+  .radio input[type="radio"] + i:before {
+    content: "\f096";
+    position: relative;
+    bottom: -4px;
+    margin-right: 5px;
+    color: #999; }
+
+.checkbox:hover input[type="checkbox"] + i:before,
+.radio:hover input[type="radio"] + i:before {
+  color: green; }
+
+.checkbox input[type="checkbox"]:checked + i:before,
+.radio input[type="radio"]:checked + i:before {
+  content: "\f046";
+  color: green; }
+
+/* CHECKBOX&RADIO XS*/
+.checkbox-xs input[type="checkbox"] + i:before,
+.radio-xs input[type="radio"] + i:before {
+  bottom: 0; }
+
+.checkbox-xs.indent,
+.radio-xs.indent {
+  padding-left: 20px; }
+  .checkbox-xs.indent .faboost,
+  .radio-xs.indent .faboost {
+    margin-left: -20px; }
